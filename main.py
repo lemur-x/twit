@@ -18,7 +18,7 @@ def search_tags(page):
     return lst
 
 def main():
-    url = 'https://twitter.com/search?q=linux&src=typd'
+    url = raw_input("Введите URL: ")
     page = get_page(url)
     lst = search_tags(page)
     print "count of <a> = %s" % len(lst)
